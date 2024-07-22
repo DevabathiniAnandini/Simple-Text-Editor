@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: bottom;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEWJz/C4QSRIAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII=");
+ background-size:contain;
+   
+   
+}
+
+.container {
+    width: 100%;
+    max-width: 2000px;
+    max-height:2000px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    background-image:url("https://png.pngtree.com/thumb_back/fh260/background/20210205/pngtree-blue-gray-square-business-background-image_556208.jpg");
+ background-size:cover;
+}
+
+h1 {
+    text-align: center;
+    text-decoration:underline;
+    
+}
+
+.controls {
+    margin-bottom: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:100px;
+}
+
+.controls label {
+    display: inline-block;
+    margin: 10px 0 5px;
+}
+
+.controls select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 350px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+
+.toggle-container input[type="checkbox"] {
+    display: none;
+}
+
+.toggle-container .slider {
+    position: relative;
+    cursor: pointer;
+    width: 34px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 1s;
+}
+
+.toggle-container .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: transform 1s;
+}
+
+.toggle-container input:checked + .slider {
+    background-color: #43e448;
+}
+
+.toggle-container input:checked + .slider:before {
+    transform: translateX(12px);
+}
+
+.buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color:#007bff;
+    color:black;
+}
+
+#reset-btn {
+    background-color: #dc3545;
+    
+}
+
+#reset-btn:hover {
+    background-color: #c82333;
+}

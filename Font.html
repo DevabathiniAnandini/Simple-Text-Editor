@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Text Editor</title>
+    <link rel="stylesheet" href="Font.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <marquee><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARcAAAC1CAMAAABCrku3AAAAnFBMVEX///81BaD19PkeAJnKwuQQAJY0AaDj3vArAJ3NxeW/t937+f0dAJhpWrQjAJuJe8Gvo9Xf2u/c1u6JeMJcRq3t6fa3sNmZjsoAAJLo5POqntIAAI7w7vhhUbCzq9fd1+6mocyMgsN8brs2E59MOaTAut05G6BwY7aUjcSRhMXFwt9PP6cvD5xLM6aclcqvq9JJJ6hKMaZfU6tuYrOScOnJAAADPUlEQVR4nO3ca1uiQBiAYRCZUInU0gWz2tbsuO3x//+3HcEO4suAy+5g8twfu8aZ4bEDoOY4AAAAAAAAAAAAAAAAAAAAAAAAAFBs0u3V0k30JP3ZsNhsONBDkmW3WH+uRxwlqaMK5kVHMxhVebhB52WmaezVEs/0JBdeZLJa7NK0TtzVh+RXXDEMwygp6HJ1XvNo+i8z9UO3lmioJzkODCOUWnWZRoYhYU93iVTlRVU0kruM/MpziLzlh+7iKq9HF3FSf0kXcdb4ki4if0gXkf/54Lt0/6aLG17TReR9oYu8+nFTXZTpkN2mu7jRWTNd1OLBN+634S5udNFEF+WNnUtjmKa7uMFNx3oXFY71kF5s2HHjXdzgdm67y3rYKCzecvNd9FXkxPb3y2123ZosCg98D7q8u7y29vslGqejOjdFR16hi5t28QxDanbRvwavbP89Ch+zcU8Fz3eVLqMkmQz/4/fL2zYtnr+8XJ7dyU94eRf9bGrGEbW76G1O7XZ5C3MthqnQpVz9LuswVq8D/Pts6IP0Z2lfurjBqe0urneXjZXO8Pany4n1Lq8n24/bYVrdxQ2espPtnpfffLu7uMEie8nm6Gtu9y3vos8QsjDz583tt72LDpO9ZHO62aD1XdZnCN9y4+mSnuF9zy9MFy3cvhigS7r41lfoIqOLjC4yusjoIqOLbL+6XMXB2o4PDjM2319XwT/rMnn4lDnZaUfB3WicmR9ml1e7/UCl9/o2HWiXMV3W6CKz2kWVv0N61sIu6qZneFd/Jmljl7Ot8SILXdSKaUA7u6gf2q1pRCu7qGh1wtUzvSeipV0mdJE2Qhd5I3SRN0IXeSN0kTdCF3kjdJE3Qhd5Iy3tUvZ5tZZ28ceH2WW3u8zb/MlhdlmaNlxOLZzD7OLUu6eUHtJBdpmaP9RmpsLBHnYxrVW5izOLA/PttKIVVBBmH+bRXXLeD7PeZXruG/ys2sWZ3P9aeKapZNHz7/VLwgM//+9RNm6vr7p0Yy98lV8s3vjM8Nh4WHlx/vPGejsdo8pdyqcqW6AzWDGOM8402NjMbrvYfCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMBH9QdpPZAKRoemfAAAAABJRU5ErkJggg==" height=15px width=25px> PUNT PARTNERS</marquee>
+        <h1>Simple Text Editor</h1>
+        <div class="controls">
+            <div class="control-group">
+            <label for="font-family"><b>Font Family:</b></label>
+            <select id="font-family">
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Roboto">Roboto</option>
+                <option value="Lato">Lato</option>
+                <option value="Montserrat">Montserrat</option>
+                <option value="Open Sans">Open Sans</option>
+                <option value="Poppins">Poppins</option>
+                <option value="Oswald">Oswald</option>
+                <option value="Raleway">Raleway</option>
+                <option value="Roboto Slab">Roboto Slab</option>
+                <option value="Merriweather">Merriweather</option>
+                <option value="Ubuntu">Ubuntu</option>
+                <option value="Playfair Display">Playfair Display</option>
+                <option value="Source Sans Pro">Source Sans Pro</option>
+                <option value="Droid Serif">Droid Serif</option>
+                <option value="PT Sans">PT Sans</option>
+                <option value="Noto Sans">Noto Sans</option>
+                <option value="Quicksand">Quicksand</option>
+                <option value="Exo">Exo</option>
+            </select>
+            
+            </div>
+            <div class="control-group">
+            <label for="font-weight"><b>Font Weight:</b></label>
+            <select id="font-weight">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300">300</option>
+                <option value="400">400</option>
+                <option value="500">500</option>
+                <option value="600">600</option>
+                <option value="700">700</option>
+                <option value="800">800</option>
+                <option value="900">900</option>
+               
+            </select>
+           </div>
+
+           <div class="control-group">
+            <label for="italic-toggle"><b>Italic:</b></label>
+            <div class="toggle-container">
+                <input type="checkbox" id="italic-toggle" />
+                <span class="slider"></span>
+            </div>
+        </div>
+        
+       
+</div>
+        <textarea id="text-editor" placeholder="Type here..."></textarea>
+
+        <div class="buttons">
+            <button id="save-btn">Save</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+    </div>
+    <script src="Font.js"></script>
+
+    
+</body>
+</html>
